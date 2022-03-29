@@ -1,9 +1,9 @@
 package LinkedList;
 
 public class mergeSortedList {
-    public static ListNode mergetSortedLists(ListNode list1, ListNode list2){
-        ListNode firstNode= new ListNode(0);
-        ListNode cur= firstNode;
+    public static ListNode1 mergetSortedLists(ListNode1 list1, ListNode1 list2){
+        ListNode1 firstNode= new ListNode1(0);
+        ListNode1 cur= firstNode;
         while(list1!=null && list2!=null){
             if(list1.val < list2.val){
                 cur.next =list1;
@@ -29,18 +29,18 @@ public class mergeSortedList {
 
     public static void main(String[] args) {
 
-        ListNode b4= new ListNode(4, null);
-        ListNode b3= new ListNode(3, b4);
-        ListNode b1= new ListNode(1, b3);
+        ListNode1 b4= new ListNode1(4, null);
+        ListNode1 b3= new ListNode1(3, b4);
+        ListNode1 b1= new ListNode1(1, b3);
 
-        ListNode a4= new ListNode(4, null);
-        ListNode a2= new ListNode(2, a4);
-        ListNode a1= new ListNode(1, a2);
+        ListNode1 a4= new ListNode1(4, null);
+        ListNode1 a2= new ListNode1(2, a4);
+        ListNode1 a1= new ListNode1(1, a2);
        //1 -> 3 ->4
         //1 ->2 ->4
 
 
-        ListNode.printList(mergeSortedList.mergetSortedLists(a1, b1));
+        ListNode1.printList(mergeSortedList.mergetSortedLists(a1, b1));
 
 
     }
